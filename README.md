@@ -1,0 +1,2 @@
+# Android-29-SharedPreferences
+這是一個SharedPreferences項目，應用程序具有保存按鈕以保存EditView內容，並具有讀取以在editview上重新顯示保存的數據，並清除以刪除
