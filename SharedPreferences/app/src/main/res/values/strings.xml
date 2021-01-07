@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">android_num_29_SharedPreferences</string>
+    <string name="Hw28_title">SharedPreferences 練習</string>
+    <string name="Hw28_name">Name</string>
+    <string name="Hw28_phone">Phone</string>
+    <string name="Hw28_sex">Sex</string>
+    <string name="Hw28_save">Save</string>
+    <string name="Hw28_clear">Clear</string>
+    <string name="Hw28_read">Read</string>
+    <string name="Hw28_clean">清除</string>
+</resources>

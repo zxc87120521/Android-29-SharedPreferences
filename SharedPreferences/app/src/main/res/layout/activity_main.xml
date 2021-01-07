@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3A64E1"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Shared Preferences"
+        android:textColor="#FAF0F0"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.591"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="46dp"
+        android:text="姓名"
+        android:textColor="#F6F6FB"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/phone"
+        app:layout_constraintEnd_toStartOf="@+id/input_name"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="65dp"
+        android:text="電話"
+        android:textColor="#F2F3F8"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/sex"
+        app:layout_constraintEnd_toStartOf="@+id/input_phone"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/sex"
+        android:layout_width="37dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="374dp"
+        android:text="性別"
+        android:textColor="#F9FAFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/input_sex"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/input_name"
+        android:layout_width="166dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="17dp"
+        android:ems="510"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textColor="#F3F0F8"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/input_phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/input_phone"
+        android:layout_width="169dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="17dp"
+        android:ems="10"
+        android:hint="PhoneNumber"
+        android:inputType="number"
+        android:textColor="#F2EFF8"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/input_sex"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/input_sex"
+        android:layout_width="163dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="35dp"
+        android:ems="10"
+        android:hint="Male/Female"
+        android:inputType="textPersonName"
+        android:textColor="#F7F4FB"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/save"
+        style="@android:style/Widget.Button"
+        android:layout_width="143dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/Hw28_save"
+        android:textColor="#673AB7"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/clear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/clear"
+        style="@android:style/Widget.Button"
+        android:layout_width="139dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="41dp"
+        android:text="@string/Hw28_clear"
+        android:textColor="#B81111"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/read"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/read"
+        style="@android:style/Widget.Button"
+        android:layout_width="138dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/Hw28_read"
+        android:textColor="#03A9F4"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/clean"
+        style="@android:style/Widget.Button"
+        android:layout_width="60sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="640dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/Hw28_clean"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
